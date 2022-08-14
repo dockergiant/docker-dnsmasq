@@ -2,8 +2,10 @@
 
 dnsmasq in a docker container, configurable via a [simple web UI](https://github.com/jpillora/webproc)
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/jpillora/dnsmasq.svg)][dockerhub]
-[![Image Size](https://images.microbadger.com/badges/image/jpillora/dnsmasq.svg)][dockerhub]
+[![Docker Pulls](https://img.shields.io/docker/pulls/rollupdev/dnsmasq.svg)][dockerhub]
+[![Image Size](https://img.shields.io/docker/image-size/rollupdev/dnsmasq.svg)][dockerhub]
+![Workflow Status](https://github.com/dockergiant/docker-dnsmasq/actions/workflows/docker-image-dnsmasq.yml/badge.svg)
+
 
 ### Usage
 
@@ -39,7 +41,7 @@ dnsmasq in a docker container, configurable via a [simple web UI](https://github
    	-e "HTTP_USER=foo" \
    	-e "HTTP_PASS=bar" \
    	--restart always \
-   	jpillora/dnsmasq
+   	dockergiant/docker-dnsmasq
    ```
 
 1. Visit `http://<docker-host>:5380`, authenticate with `foo/bar` and you should see
@@ -81,4 +83,4 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[dockerhub]: https://hub.docker.com/r/jpillora/dnsmasq/
+[dockerhub]: https://hub.docker.com/r/rollupdev/dnsmasq
